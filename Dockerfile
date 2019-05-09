@@ -18,5 +18,8 @@ RUN apt-get install -y libnss3-dev
 
 RUN apt-get install -y lsb-release
 
+MKDIR ./config/Cyberbotics
+COPY Webots-R2019a.conf ./config/Cyberbotics/Webots-R2019a.conf
+
 #Webots WebUI
 EXPOSE 1234
