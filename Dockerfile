@@ -14,6 +14,9 @@ RUN apt-get install -y ./libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
 
 RUN apt-get install -y ./webots_2019a-rev1_amd64.deb
 
+RUN rm ./webots_2019a-rev1_amd64.deb
+RUN rm ./libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+
 RUN apt-get install -y libnss3-dev
 
 RUN apt-get install -y lsb-release
